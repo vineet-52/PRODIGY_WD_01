@@ -1,0 +1,1 @@
+A sleek and responsive online store showcasing premium accessories like wireless earbuds and Bluetooth neckbands. The website features smooth scrolling, hover effects, and a modern design for an enhanced user experience.
