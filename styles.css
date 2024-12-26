@@ -41,6 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Ensures navbar items wrap on small screens */
 }
 
 .navbar a {
@@ -70,6 +71,7 @@ body {
     justify-content: center;
     text-align: center;
     color: #fff;
+    background-position: center; /* Ensure the background image remains centered */
 }
 
 .hero h1 {
@@ -147,7 +149,7 @@ body {
 }
 
 .product-card .btn:hover {
-    background: #e64a19;
+    background: #136a6c;
 }
 
 /* Footer Section */
@@ -221,7 +223,79 @@ body {
     margin-top: 20px;
 }
 
-/* Adding transition effect to body for smoother scrolling behavior */
-html {
-    scroll-behavior: smooth; /* Smooth scrolling for all anchor links */
+/* Responsive Media Queries */
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        margin: 0 15px;
+    }
+
+    .products-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .products-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
 }
